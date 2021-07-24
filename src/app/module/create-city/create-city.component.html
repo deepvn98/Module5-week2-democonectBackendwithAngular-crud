@@ -1,0 +1,30 @@
+<p>create-city works!</p>
+<form (ngSubmit)="createCity()">
+  <div class="form-group">
+    <label class="form-group">Name</label>
+    <input type="text" name="name" class="form-control" [(ngModel)]="city.name"  placeholder="Enter CityName">
+  </div>
+  <div class="form-group">
+    <label class="form-group" >Area</label>
+    <input type="number" name="area" class="form-control" [(ngModel)]="city.area"  placeholder="Area" >
+  </div>
+  <div class="form-group">
+    <label class="form-group" >Population</label>
+    <input type="number" name="population" class="form-control" [(ngModel)]="city.population"  placeholder="Population" >
+  </div>
+  <div class="form-group">
+    <label class="form-group" >GDP</label>
+    <input type="number" name="gDP" class="form-control" [(ngModel)]="city.gdp"  placeholder="GDP" >
+  </div>
+  <div class="form-group">
+    <label class="form-group" >Description</label>
+    <input type="text" name="description" class="form-control" [(ngModel)]="city.description"  placeholder="Description" >
+  </div>
+  <div class="form-group">
+    <label class="form-group">Country</label>
+    <select name="country" [(ngModel)]="city.country1.id" >
+      <option *ngFor="let item of countries" [value]="item.id">{{item.name}}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
