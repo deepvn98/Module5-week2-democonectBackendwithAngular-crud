@@ -10,6 +10,8 @@ import { CityComponent } from './module/city/city.component';
 import { CountryComponent } from './module/country/country.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateCityComponent } from './module/create-city/create-city.component';
+import { UpdatecityComponent } from './module/updatecity/updatecity.component';
+import { DeletecityComponent } from './module/deletecity/deletecity.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { CreateCityComponent } from './module/create-city/create-city.component'
     CityComponent,
     CountryComponent,
     CreateCityComponent,
+    UpdatecityComponent,
+    DeletecityComponent,
   ],
   imports: [
     BrowserModule,

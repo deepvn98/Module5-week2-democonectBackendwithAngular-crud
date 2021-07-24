@@ -24,7 +24,7 @@ export class CitysvService {
   }
 
 //lay ra mot thanh pho
-deleteCityById(id:number):Observable<Icity>{
+  deleteCityById(id: number):Observable<Icity>{
     return this.httpclient.delete<Icity>(this.url_Api+'/'+ id);
 
 }

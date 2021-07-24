@@ -39,7 +39,6 @@ export class CreateCityComponent implements OnInit {
     this.citySv.createCity(this.city).subscribe(()=>
     {this.router.navigate(['/city'])
     })
-    console.log(this.city)
   }
   getAllCountry(){
     this.country1.getAllCountry().subscribe((list)=>{
