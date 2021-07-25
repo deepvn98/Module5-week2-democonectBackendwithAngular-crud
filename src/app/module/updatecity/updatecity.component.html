@@ -1,1 +1,55 @@
 <p>updatecity works!</p>
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Country</th>
+    <th scope="col">area</th>
+    <th scope="col">population</th>
+    <th scope="col">GDP</th>
+    <th scope="col">description</th>
+  </tr>
+  <tbody>
+  <tr>
+    <td>{{city.name}}</td>
+    <td>{{city.country1.name}}</td>
+    <td>{{city.area}}</td>
+    <td>{{city.population}}</td>
+    <td>{{city.gdp}}</td>
+    <td>{{city.description}}</td>
+  </tr>
+  </tbody>
+</table>
+<br><br><br>
+
+<form (ngSubmit)="updateCity()">
+  <div class="form-group">
+    <label class="form-group">Name</label>
+    <input type="text" name="name" class="form-control" [(ngModel)]="city.name"  placeholder="Enter CityName">
+  </div>
+  <div class="form-group">
+    <label class="form-group" >Area</label>
+    <input type="number" name="area" class="form-control" [(ngModel)]="city.area"  placeholder="Area" >
+  </div>
+  <div class="form-group">
+    <label class="form-group" >Population</label>
+    <input type="number" name="population" class="form-control" [(ngModel)]="city.population"  placeholder="Population" >
+  </div>
+  <div class="form-group">
+    <label class="form-group" >GDP</label>
+    <input type="number" name="gDP" class="form-control" [(ngModel)]="city.gdp"  placeholder="GDP" >
+  </div>
+  <div class="form-group">
+    <label class="form-group" >Description</label>
+    <input type="text" name="description" class="form-control" [(ngModel)]="city.description"  placeholder="Description" >
+  </div>
+  <div class="form-group">
+    <label class="form-group">Country</label>
+    <select name="country" [(ngModel)]="city.country1.id" >
+      <option *ngFor="let item of countries" [value]="item.id">{{item.name}}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

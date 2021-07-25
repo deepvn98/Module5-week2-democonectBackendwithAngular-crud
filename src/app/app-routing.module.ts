@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'country',component:CountryComponent},
   {path:'create',component:CreateCityComponent},
   {path:'delete',component:DeletecityComponent},
-  {path:'update',component:UpdatecityComponent}
+  {path:'update/:id',component:UpdatecityComponent}
 ];
 
 @NgModule({

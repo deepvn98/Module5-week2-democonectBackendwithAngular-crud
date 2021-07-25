@@ -34,4 +34,9 @@ export class CitysvService {
     return this.httpclient.put<Icity>(this.url_Api+'/'+id+'/edit',city);
   }
 
+//  detail acity
+  getCityById(id:number):Observable<any>{
+    return this.httpclient.get<any>(this.url_Api+'/with/'+id);
+  }
+
 }

@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateCityComponent } from './module/create-city/create-city.component';
 import { UpdatecityComponent } from './module/updatecity/updatecity.component';
 import { DeletecityComponent } from './module/deletecity/deletecity.component';
+import { OrrerComponent } from './module/orrer/orrer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DeletecityComponent } from './module/deletecity/deletecity.component';
     CreateCityComponent,
     UpdatecityComponent,
     DeletecityComponent,
+    OrrerComponent,
   ],
   imports: [
     BrowserModule,
